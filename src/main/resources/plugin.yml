@@ -1,0 +1,31 @@
+name: SimpleArenaMinigame
+version: '${version}'
+main: net.hyper_pigeon.simplearenaminigame.SimpleArenaMinigame
+api-version: 1.18
+authors: [ CyborgPigeon ]
+description: A simple PVP minigame.
+commands:
+  start:
+    description: Starts the Arena Minigame.
+    usage: /start
+    permission: simple_arena_minigame.op
+  join:
+    description: Allows player to join the arena minigame.
+    usage: /join
+    permission: simple_arena_minigame.player
+  leave:
+    description: Allows player to leave the arena minigame.
+    usage: /leave
+    permission: simple_arena_minigame.op
+permissions:
+  simple_arena_minigame.op:
+    description: Allows you to start arena.
+    default: op
+  simple_arena_minigame.player:
+    description: Allows players to join and leave arena.
+    default: true
+
+
+
+
+
